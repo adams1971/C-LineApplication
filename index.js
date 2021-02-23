@@ -1,18 +1,25 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const axios = require("axios"); //github api
-
+const axios = require("axios"); //github api, w/o this the username call will not work
+//create sections; description ToC, Installations, Usage, 
+//create questions
 inquirer
   .prompt([
     {
       type: "input",
       name: "title",
-      message: "What is your project title?",
+      message: "What is your project title?", //C-Line Application ReadMe
     },
     {
       type: "input",
       name: "github",
-      message: "What is your ghub username?",
+      message: "What is your GitHub username?",
+    },
+
+    {
+      type: "input",
+      name: "email",
+      message: "What is your email address?",
     },
   ])
   .then((answers) => {
@@ -24,7 +31,7 @@ inquirer
 
         const readMe = `
         # ${answers.title}
-        ### ${answers.github}
+        # ${answers.github}
 
         `;
 
