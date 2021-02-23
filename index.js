@@ -44,7 +44,9 @@ inquirer
         const readMe = `
         # ${answers.title}
         ${answers.github}
-        ${answers.email} 
+        ${answers.email}
+        ${answers.description}
+        ${answers.license} 
 
         `;
 
