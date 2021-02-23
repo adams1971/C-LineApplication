@@ -1,13 +1,38 @@
-//Done ----------TODO: Include packages needed for this application
+const inquirer = require("inquirer");
+const fs = require("fs");
+const axios = require("axios");
 
-// TODO: Create an array of questions for user input
-const questions = [];
+inquirer
+  .prompt([
+    {
+      type: "input",
+      name: "title",
+      message: "What is your project title?",
+    },
+    {
+      type: "input",
+      name: "github",
+      message: "What is your ghub username?",
+    },
+  ])
+  .then((answers) => {
+    console.log(answers);
+    axios
+      .get(`https://api.github.com/users/${answers.github}`)
+      .then((response) => {
+        console.log(response);
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+        const readMe = `
+        # ${answers.title}
 
-// TODO: Create a function to initialize app
-function init() {}
+        `;
 
-// Function call to initialize app
-init();
+        fs.writeFile("ReadME.md", readMe, (err) => {
+          if (err) {
+            console.log("Error: " + err);
+          } else {
+            console.log("ReadMe successfully created!");
+          }
+        });
+      });
+  });
