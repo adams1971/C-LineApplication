@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const axios = require("axios");
+const axios = require("axios"); //github api
 
 inquirer
   .prompt([
@@ -24,6 +24,7 @@ inquirer
 
         const readMe = `
         # ${answers.title}
+        ### ${answers.github}
 
         `;
 
