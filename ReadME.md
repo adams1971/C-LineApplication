@@ -1,5 +1,6 @@
 
-        # C-Line Application ReadME
+        # C-Line ReadMe Generator
         # adams1971
+        # adamscdcm@gmail.com 
 
         

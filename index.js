@@ -28,10 +28,11 @@ inquirer
       .get(`https://api.github.com/users/${answers.github}`)
       .then((response) => {
         console.log(response);
-
+        //make github and email a link to repo
         const readMe = `
         # ${answers.title}
         # ${answers.github}
+        # ${answers.email} 
 
         `;
 
