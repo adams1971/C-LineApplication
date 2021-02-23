@@ -21,6 +21,18 @@ inquirer
       name: "email",
       message: "What is your email address?",
     },
+
+    {
+      type: "input",
+      name: "description",
+      message: "Briefly describe your project",
+    },
+
+    {
+      type: "input",
+      name: "license",
+      message: "What license does you project use?",
+    },
   ])
   .then((answers) => {
     console.log(answers);
@@ -28,11 +40,11 @@ inquirer
       .get(`https://api.github.com/users/${answers.github}`)
       .then((response) => {
         console.log(response);
-        //make github and email a link to repo
+        //make github and email link to repo
         const readMe = `
         # ${answers.title}
-        # ${answers.github}
-        # ${answers.email} 
+        ${answers.github}
+        ${answers.email} 
 
         `;
 
