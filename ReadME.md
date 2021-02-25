@@ -1,8 +1,8 @@
 
         # C-Line ReadME Generator
+        # -----
+        adamscdcm@gmail.com	
         adams1971
-        adamscdcm@gmail.com
-        Simple ReadME Generator from the C-Line
         ISC 
 
         

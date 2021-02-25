@@ -12,8 +12,8 @@ inquirer
     },
     {
       type: "input",
-      name: "github",
-      message: "What is your GitHub username?",
+      name: "description",
+      message: "Add a meaningful description of your Project",
     },
 
     {
@@ -24,14 +24,14 @@ inquirer
 
     {
       type: "input",
-      name: "description",
-      message: "Briefly describe your project",
+      name: "GitHub",
+      message: "What is your GitHub username?",
     },
 
     {
       type: "input",
       name: "license",
-      message: "What license does you project use?",
+      message: "What license does you project use?", //ISC
     },
   ])
   .then((answers) => {
@@ -40,12 +40,12 @@ inquirer
       .get(`https://api.github.com/users/${answers.github}`)
       .then((response) => {
         console.log(response);
-        //make github and email link to repo
+      
         const readMe = `
         # ${answers.title}
-        ${answers.github}
+        # ${answers.description}
         ${answers.email}
-        ${answers.description}
+        ${answers.GitHub}
         ${answers.license} 
 
         `;
@@ -59,3 +59,13 @@ inquirer
         });
       });
   });
+
+  // const generateMarkdown = (answers) =>
+
+  // <details open="open">
+  // <summery><h2 style="diplay: inline-block">Table of Contents</h2>
+  // </summery>
+  // <ol>
+  // <a href="#about the project">About the Project</a>
+  // </ol>
+  // </details> 
