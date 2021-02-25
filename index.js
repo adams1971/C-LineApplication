@@ -96,7 +96,7 @@ function init() {
   .then(answers => {
     let markDown= generateMarkdown (answers)
     
-    fs.writeFile("ReadME2.md", markDown, (err) => {
+    fs.writeFile("README.md", markDown, (err) => {
               if (err) {
                 console.log("Error: " + err);
               } else {
