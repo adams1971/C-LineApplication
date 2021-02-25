@@ -1,10 +1,10 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const axios = require("axios"); //github api, w/o this the username call will not work
+
 //create sections; description ToC, Installations, Usage, 
-//create questions
-inquirer
-  .prompt([
+//TODO create and array of questions
+const askQuestions = () =>
+inquirer.prompt([
     {
       type: "input",
       name: "title",
@@ -29,36 +29,109 @@ inquirer
     },
 
     {
-      type: "input",
+      type: "checkbox",
       name: "license",
       message: "What license does you project use?", //ISC
+      choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "None"]
+    },
+
+    {
+      type: "input",
+      name: "start",
+      message: "What is the command to start the project?",
+      default: "npm start",
+    },
+
+    {
+      type: "input",
+      name: "test",
+      message: "What is the command to test the project?",
+      default: "npm test",
+    },
+
+    {
+      type: "input",
+      name: "install",
+      message: "What command will install the dependences?",
+      default: "npm i",
     },
   ])
-  .then((answers) => {
-    console.log(answers);
-    axios
-      .get(`https://api.github.com/users/${answers.github}`)
-      .then((response) => {
-        console.log(response);
-      
-        const readMe = `
-        # ${answers.title}
-        # ${answers.description}
-        ${answers.email}
-        ${answers.GitHub}
-        ${answers.license} 
 
-        `;
 
-        fs.writeFile("ReadME.md", readMe, (err) => {
-          if (err) {
-            console.log("Error: " + err);
-          } else {
-            console.log("ReadMe successfully created!");
-          }
-        });
-      });
+// askQuestions()
+//   .then(answers => console.log(answers));
+
+function generateMarkdown (answers) {
+  let file= `
+  ![${answers.license[0]}](https://img.shields.io/github/license/${answers.GitHub}/${answers.title})
+  # ${answers.title}
+  
+  ## Description of Project
+  
+  ${answers.description}
+
+  ## Installing Auth Server
+
+  git clone ${answers.GitHub}
+
+  to install run ${answers.install}
+
+  ## Using Auth Server
+  
+  To use ${answers.title}, follow these steps
+  
+  - to start ${answers.start}
+  
+  - to test ${answers.test}
+  
+  
+  ## Contact Me
+  
+  ${answers.email}`
+  return file
+}
+
+function init() {
+  askQuestions()
+  .then(answers => {
+    let markDown= generateMarkdown (answers)
+    
+    fs.writeFile("ReadME2.md", markDown, (err) => {
+              if (err) {
+                console.log("Error: " + err);
+              } else {
+                console.log("ReadMe successfully created!");
+              }
+    });
   });
+}
+
+init();
+  // .then((answers) => {
+  //   console.log(answers);
+  //   axios
+  //     .get(`https://api.github.com/users/${answers.github}`)
+  //     .then((response) => {
+  //       console.log(response);
+      
+  //       const readMe = `
+  //       # ${answers.title}
+  //       # ${answers.description}
+  //       ${answers.email}
+  //       ${answers.GitHub}
+  //       ${answers.license} 
+
+  //       `;
+
+  //       fs.writeFile("ReadME.md", readMe, (err) => {
+  //         if (err) {
+  //           console.log("Error: " + err);
+  //         } else {
+  //           console.log("ReadMe successfully created!");
+  //         }
+  //       });
+  //     });
+  // });
 
   // const generateMarkdown = (answers) =>
 
