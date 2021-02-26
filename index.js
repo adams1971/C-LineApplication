@@ -1,14 +1,13 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 
-//create sections; description ToC, Installations, Usage, 
 //TODO create and array of questions
 const askQuestions = () =>
 inquirer.prompt([
     {
       type: "input",
       name: "title",
-      message: "What is your project title?", //C-Line Application ReadMe
+      message: "What is your project title?", 
     },
     {
       type: "input",
@@ -31,7 +30,7 @@ inquirer.prompt([
     {
       type: "checkbox",
       name: "license",
-      message: "What license does you project use?", //ISC
+      message: "What license does you project use?", 
       choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "None"]
     },
 
@@ -60,7 +59,7 @@ inquirer.prompt([
 
 // askQuestions()
 //   .then(answers => console.log(answers));
-
+//generate markdown README
 function generateMarkdown (answers) {
   let file= `
   ![${answers.license[0]}](https://img.shields.io/github/license/${answers.GitHub}/${answers.title})
@@ -90,7 +89,7 @@ function generateMarkdown (answers) {
   ${answers.email}`
   return file
 }
-
+//initiate markDown
 function init() {
   askQuestions()
   .then(answers => {
@@ -107,6 +106,7 @@ function init() {
 }
 
 init();
+
   // .then((answers) => {
   //   console.log(answers);
   //   axios
@@ -133,12 +133,3 @@ init();
   //     });
   // });
 
-  // const generateMarkdown = (answers) =>
-
-  // <details open="open">
-  // <summery><h2 style="diplay: inline-block">Table of Contents</h2>
-  // </summery>
-  // <ol>
-  // <a href="#about the project">About the Project</a>
-  // </ol>
-  // </details> 

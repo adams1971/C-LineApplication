@@ -4,7 +4,7 @@
   
   ## Description of Project
   
-  An application that generates a simple readme file from the command line. 
+  README file
 
   ## Installing Auth Server
 
