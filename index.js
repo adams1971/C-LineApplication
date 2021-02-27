@@ -65,6 +65,8 @@ function generateMarkdown (answers) {
   ![${answers.license[0]}](https://img.shields.io/github/license/${answers.GitHub}/${answers.title})
   # ${answers.title}
   
+  ## Table of Contents
+
   ## Description of Project
   
   ${answers.description}

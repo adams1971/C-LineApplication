@@ -2,9 +2,11 @@
   ![MIT](https://img.shields.io/github/license/adams1971/C-LineApplication)
   # C-LineApplication
   
+  ## Table of Contents
+
   ## Description of Project
   
-  README file
+  Command Line Generated README
 
   ## Installing Auth Server
 
@@ -23,4 +25,4 @@
   
   ## Contact Me
   
-  adamscdcm@gmail.com
+  adamscdcm@gmail.com	
