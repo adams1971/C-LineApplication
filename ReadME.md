@@ -3,10 +3,13 @@
   # C-LineApplication
   
   ## Table of Contents
+  * [Description of Project] (#project-description)
+  * [Installing Auth Server] (#install-auth)
+  * [Contact Info] (#contact-info)
 
   ## Description of Project
   
-  Command Line Generated README
+  Simple README generated from the command line
 
   ## Installing Auth Server
 
@@ -25,4 +28,4 @@
   
   ## Contact Me
   
-  adamscdcm@gmail.com	
+  adamscdcm@gmail.com

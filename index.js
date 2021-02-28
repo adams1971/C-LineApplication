@@ -30,7 +30,7 @@ inquirer.prompt([
     {
       type: "checkbox",
       name: "license",
-      message: "What license does you project use?", 
+      message: "What license does your project use?", 
       choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "None"]
     },
 
@@ -66,6 +66,9 @@ function generateMarkdown (answers) {
   # ${answers.title}
   
   ## Table of Contents
+  * [Description of Project] (#project-description)
+  * [Installing Auth Server] (#install-auth)
+  * [Contact Info] (#contact-info)
 
   ## Description of Project
   
