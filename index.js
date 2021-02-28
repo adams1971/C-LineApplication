@@ -12,7 +12,7 @@ inquirer.prompt([
     {
       type: "input",
       name: "description",
-      message: "Add a meaningful description of your Project",
+      message: "Add a description of your Project",
     },
 
     {
@@ -55,7 +55,7 @@ inquirer.prompt([
       default: "npm i",
     },
 
-  ])
+  ]);
 
 
 // askQuestions()
@@ -83,8 +83,8 @@ function generateMarkdown (answers) {
 
   ## Using Auth Server
   
-  To use ${answers.title}, follow these steps
-  
+  To use ${answers.title}, follow these steps;
+
   - to start ${answers.start}
   
   - to test ${answers.test}

@@ -9,7 +9,7 @@
   
   ## Description of Project
   
-  A simple README file that is generated from the command line in Node.js that describes and demonstrates how to create a command line README.
+  A simple ReadMe file that is generated from the command line. By prompting the user with questions a professional README file in created and saved to the current working directory. It is run using Node.js and the inquire npm package.
 
   ## Installing Auth Server
 
@@ -19,8 +19,8 @@
 
   ## Using Auth Server
   
-  To use C-LineApplication, follow these steps
-  
+  To use C-LineApplication, follow these steps;
+
   - to start npm start
   
   - to test npm test
