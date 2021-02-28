@@ -5,15 +5,15 @@
   ## Table of Contents
   * [Description of Project] (#project-description)
   * [Installing Auth Server] (#install-auth)
-  * [Contact Info] (#contact-info)
-
+  * [Contact Me] (#contact-me)
+  
   ## Description of Project
   
-  Simple README generated from the command line
+  A simple README file that is generated from the command line in Node.js that describes and demonstrates how to create a command line README.
 
   ## Installing Auth Server
 
-  git clone adams1971
+  git clone @ adams1971
 
   to install run npm i
 

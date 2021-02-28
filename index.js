@@ -54,6 +54,7 @@ inquirer.prompt([
       message: "What command will install the dependences?",
       default: "npm i",
     },
+
   ])
 
 
@@ -68,15 +69,15 @@ function generateMarkdown (answers) {
   ## Table of Contents
   * [Description of Project] (#project-description)
   * [Installing Auth Server] (#install-auth)
-  * [Contact Info] (#contact-info)
-
+  * [Contact Me] (#contact-me)
+  
   ## Description of Project
   
   ${answers.description}
 
   ## Installing Auth Server
 
-  git clone ${answers.GitHub}
+  git clone @ ${answers.GitHub}
 
   to install run ${answers.install}
 
@@ -101,11 +102,11 @@ function init() {
     let markDown= generateMarkdown (answers)
     
     fs.writeFile("README.md", markDown, (err) => {
-              if (err) {
-                console.log("Error: " + err);
-              } else {
-                console.log("ReadMe successfully created!");
-              }
+        if (err) {
+          console.log("Error: " + err);
+        } else {
+          console.log("ReadMe successfully created!");
+        }
     });
   });
 }
