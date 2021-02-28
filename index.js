@@ -92,7 +92,8 @@ function generateMarkdown (answers) {
   
   ## Contact Me
   
-  ${answers.email}`
+  ${answers.email}
+  [https://github.com/adams1971](https://github.com/adams1971)`
   return file
 }
 //initiate markDown
