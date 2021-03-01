@@ -70,6 +70,7 @@ function generateMarkdown (answers) {
   - [Description of Project](#description)
   - [Installing Project](#installing)
   - [Using the Project](#using)
+  - [Demo Video](#demo)
   - [Contact](#contact)
 
   ## Description of Project
@@ -93,11 +94,13 @@ function generateMarkdown (answers) {
   - - Follow prompts and answer question
   
   - - ReadMe is generated 
-  
+
   - - To start ${answers.start}
   
   - - To test ${answers.test}
-  
+
+  ## Demo Video
+
   ## Contact
 
   ${answers.email}
