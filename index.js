@@ -66,7 +66,7 @@ function generateMarkdown (answers) {
   ![${answers.license[0]}](https://img.shields.io/github/license/${answers.GitHub}/${answers.title})
   # ${answers.title}
 
-  ![terminal.png](terminal.png)
+  ![ReadME.png](ReadME.png)
 
   ## Table of Contents
   - [Description of Project](#description)
@@ -100,6 +100,8 @@ function generateMarkdown (answers) {
   - - To start ${answers.start}
   
   - - To test ${answers.test}
+
+  ![terminal.png](terminal.png)
 
   ## Demo Video
   https://drive.google.com/file/d/1Ma75LxHBJu-EkrY2WSKzjhZHMUn-xieR/view?usp=sharing

@@ -2,7 +2,7 @@
   ![MIT](https://img.shields.io/github/license/adams1971/C-LineApplication)
   # C-LineApplication
 
-  ![terminal.png](terminal.png)
+  ![ReadME.png](ReadME.png)
 
   ## Table of Contents
   - [Description of Project](#description)
@@ -13,7 +13,7 @@
 
   ## Description of Project
   
-  Readme
+  A simple ReadMe file that is generated from the command line. By prompting the user with questions a professional ReadMe file is created and saved to the current working directory. It is run using Node.js and the Inquirer package.
 
   ## Installing Project
 
@@ -37,11 +37,13 @@
   
   - - To test npm test
 
+  ![terminal.png](terminal.png)
+
   ## Demo Video
   https://drive.google.com/file/d/1Ma75LxHBJu-EkrY2WSKzjhZHMUn-xieR/view?usp=sharing
 
   ## Contact
 
-  adamscdcm@gmail.com	
+  adamscdcm@gmail.com
 
   [https://github.com/adams1971](https://github.com/adams1971)
