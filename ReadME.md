@@ -5,30 +5,37 @@
   ## Table of Contents
   - [Description of Project](#description)
   - [Installing Project](#installing)
-  - [Using Project](#using)
+  - [Using the Project](#using)
   - [Contact](#contact)
 
   ## Description of Project
   
-  Readme
+  A simple ReadMe file that is generated from the command line. By prompting the user with questions a professional ReadMe file is created and saved to the current working directory. It is run using Node.js and the Inquirer package.
 
-  ## Installing Auth Server
+  ## Installing Project
 
-  git clone @ adams1971
+  - git clone @ adams1971 and paste into your terminal
 
-  to install run npm i
+  - To install dependencies run npm i
 
-  ## Using Auth Server
+  ## Using the Project
   
-  To use C-LineApplication, follow these steps;
+  - To use C-LineApplication, follow these steps;
 
-  - to start npm start
+  - - To Run open file in VSCode and open Intergrated Terminal
   
-  - to test npm test
+  - - To Begin type node index.js 
+
+  - - Follow prompts and answer question
   
+  - - ReadMe is generated 
+  
+  - - To start npm start
+  
+  - - To test npm test
   
   ## Contact
 
-  adamscdcm@gmail.com
+  adamscdcm@gmail.com	
 
   [https://github.com/adams1971](https://github.com/adams1971)

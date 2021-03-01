@@ -69,27 +69,34 @@ function generateMarkdown (answers) {
   ## Table of Contents
   - [Description of Project](#description)
   - [Installing Project](#installing)
-  - [Using Project](#using)
+  - [Using the Project](#using)
   - [Contact](#contact)
 
   ## Description of Project
   
   ${answers.description}
 
-  ## Installing Auth Server
+  ## Installing Project
 
-  git clone @ ${answers.GitHub}
+  - git clone @ ${answers.GitHub} and paste into your terminal
 
-  to install run ${answers.install}
+  - To install dependencies run ${answers.install}
 
-  ## Using Auth Server
+  ## Using the Project
   
-  To use ${answers.title}, follow these steps;
+  - To use ${answers.title}, follow these steps;
 
-  - to start ${answers.start}
+  - - To Run open file in VSCode and open Intergrated Terminal
   
-  - to test ${answers.test}
+  - - To Begin type node index.js 
+
+  - - Follow prompts and answer question
   
+  - - ReadMe is generated 
+  
+  - - To start ${answers.start}
+  
+  - - To test ${answers.test}
   
   ## Contact
 
