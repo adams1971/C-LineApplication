@@ -8,7 +8,7 @@
   - [Description of Project](#description)
   - [Installing Project](#installing)
   - [Using the Project](#using)
-  - [Demo Video](#demo)
+  - [Demo Video](#demo-video)
   - [Contact](#contact)
 
   ## Description of Project
