@@ -102,6 +102,9 @@ function generateMarkdown (answers) {
   
   - - To test ${answers.test}
 
+  ## License Used
+  https://opensource.org/licenses/MIT
+
   ![terminal.png](terminal.png)
 
   ## Demo Video
