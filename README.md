@@ -8,6 +8,7 @@
   - [Description of Project](#description-of-project)
   - [Installing Project](#installing-project)
   - [Using the Project](#using-the-project)
+  - [License Used](#license-used)
   - [Demo Video](#demo-video)
   - [Contact](#contact)
 

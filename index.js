@@ -69,10 +69,11 @@ function generateMarkdown (answers) {
   ![ReadME.png](ReadME.png)
 
   ## Table of Contents
-  - [Description of Project](#description)
-  - [Installing Project](#installing)
-  - [Using the Project](#using)
-  - [Demo Video](#demo)
+  - [Description of Project](#description-of-project)
+  - [Installing Project](#installing-project)
+  - [Using the Project](#using-the-project)
+  - [License Used](#license-used)
+  - [Demo Video](#demo-video)
   - [Contact](#contact)
 
   ## Description of Project
