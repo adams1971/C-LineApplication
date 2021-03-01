@@ -3,16 +3,11 @@
   # C-LineApplication
   
   ## Table of Contents
-  <ul>
-  <li>
-  <a href="#description">Description of Project</a>
-  </li>
-  * [Description of Project] (#project-description)
-  * [Installing Auth Server] (#install-auth)
-  <li>
-  <a href="#contact">Contact Me</a>
-  </li>
-  </ul>
+  - [Description of Project](#description)
+  - [Installing Project](#installing)
+  - [Using Project](#using)
+  - [Contact](#contact)
+
   ## Description of Project
   
   Readme
@@ -32,7 +27,8 @@
   - to test npm test
   
   
-  ## Contact Me
-  
+  ## Contact
+
   adamscdcm@gmail.com
+
   [https://github.com/adams1971](https://github.com/adams1971)

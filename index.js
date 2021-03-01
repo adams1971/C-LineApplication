@@ -67,16 +67,11 @@ function generateMarkdown (answers) {
   # ${answers.title}
   
   ## Table of Contents
-  <ul>
-  <li>
-  <a href="#description">Description of Project</a>
-  </li>
-  * [Description of Project] (#project-description)
-  * [Installing Auth Server] (#install-auth)
-  <li>
-  <a href="#contact">Contact Me</a>
-  </li>
-  </ul>
+  - [Description of Project](#description)
+  - [Installing Project](#installing)
+  - [Using Project](#using)
+  - [Contact](#contact)
+
   ## Description of Project
   
   ${answers.description}
@@ -96,12 +91,15 @@ function generateMarkdown (answers) {
   - to test ${answers.test}
   
   
-  ## Contact Me
-  
+  ## Contact
+
   ${answers.email}
+
   [https://github.com/adams1971](https://github.com/adams1971)`
+
   return file
 }
+
 //initiate markDown
 function init() {
   askQuestions()
