@@ -64,7 +64,7 @@ inquirer.prompt([
 function generateMarkdown (answers) {
   let file= `
   
-  ![ReadME.png](ReadME.png)
+  ![readmeIMG.png](readmeIMG.png)
   
   ![${answers.license[0]}](https://img.shields.io/github/license/${answers.GitHub}/${answers.title})
   https://opensource.org/licenses/MIT
@@ -106,7 +106,7 @@ function generateMarkdown (answers) {
   ![terminal.png](terminal.png)
 
   ## Demo Video
-  https://drive.google.com/file/d/1Ma75LxHBJu-EkrY2WSKzjhZHMUn-xieR/view?usp=sharing
+  https://drive.google.com/file/d/1eHpmS32xqbijSfxDkKUXo_sB8JG8SUa7/view?usp=sharing
 
   ## Contact
 

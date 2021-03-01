@@ -1,9 +1,10 @@
 
+  
+  ![readmeIMG.png](readmeIMG.png)
+  
   ![MIT](https://img.shields.io/github/license/adams1971/C-LineApplication)
   https://opensource.org/licenses/MIT
   # C-LineApplication
-
-  ![ReadME.png](ReadME.png)
 
   ## Table of Contents
   - [Description of Project](#description-of-project)
@@ -14,7 +15,7 @@
 
   ## Description of Project
   
-  readddddddd
+  A simple ReadMe file that is generated from the command line. By prompting the user with questions a professional ReadMe file is created and saved to the current working directory. It is run using Node.js and the Inquirer package.
 
   ## Installing Project
 
