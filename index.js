@@ -65,7 +65,9 @@ function generateMarkdown (answers) {
   let file= `
   ![${answers.license[0]}](https://img.shields.io/github/license/${answers.GitHub}/${answers.title})
   # ${answers.title}
-  
+
+  ![terminal.png](terminal.png)
+
   ## Table of Contents
   - [Description of Project](#description)
   - [Installing Project](#installing)
@@ -100,8 +102,8 @@ function generateMarkdown (answers) {
   - - To test ${answers.test}
 
   ## Demo Video
-  https://drive.google.com/file/d/1A8yJJLuOsBYafTPI6ujCjxLGMs81SPGK/view?usp=sharing
-  
+  https://drive.google.com/file/d/1Ma75LxHBJu-EkrY2WSKzjhZHMUn-xieR/view?usp=sharing
+
   ## Contact
 
   ${answers.email}

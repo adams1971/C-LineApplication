@@ -1,7 +1,9 @@
 
-  ![MIT](https://img.shields.io/github/license/adams1971/cline app)
-  # cline app
-  
+  ![MIT](https://img.shields.io/github/license/adams1971/C-LineApplication)
+  # C-LineApplication
+
+  ![terminal.png](terminal.png)
+
   ## Table of Contents
   - [Description of Project](#description)
   - [Installing Project](#installing)
@@ -11,7 +13,7 @@
 
   ## Description of Project
   
-  readms
+  Readme
 
   ## Installing Project
 
@@ -21,7 +23,7 @@
 
   ## Using the Project
   
-  - To use cline app, follow these steps;
+  - To use C-LineApplication, follow these steps;
 
   - - To Run open file in VSCode and open Intergrated Terminal
   
@@ -36,10 +38,10 @@
   - - To test npm test
 
   ## Demo Video
-  https://drive.google.com/file/d/1A8yJJLuOsBYafTPI6ujCjxLGMs81SPGK/view?usp=sharing
-  
+  https://drive.google.com/file/d/1Ma75LxHBJu-EkrY2WSKzjhZHMUn-xieR/view?usp=sharing
+
   ## Contact
 
-  adamscdcm@gmail.com
+  adamscdcm@gmail.com	
 
   [https://github.com/adams1971](https://github.com/adams1971)
