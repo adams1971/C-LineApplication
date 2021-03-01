@@ -6,11 +6,12 @@
   <a href="#description">Description</a>
   * [Description of Project] (#project-description)
   * [Installing Auth Server] (#install-auth)
+  <a href="#contact">Contact Me</a>
   * [Contact Me] (#contact-me)
   
   ## Description of Project
   
-  ReadMe
+  Readme
 
   ## Installing Auth Server
 
