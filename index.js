@@ -67,6 +67,7 @@ function generateMarkdown (answers) {
   # ${answers.title}
   
   ## Table of Contents
+  <a href="#description">Description</a>
   * [Description of Project] (#project-description)
   * [Installing Auth Server] (#install-auth)
   * [Contact Me] (#contact-me)
