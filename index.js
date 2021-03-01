@@ -86,6 +86,9 @@ function generateMarkdown (answers) {
 
   - To install dependencies run ${answers.install}
 
+  ## License Used
+  https://opensource.org/licenses/MIT
+  
   ## Using the Project
   
   - To use ${answers.title}, follow these steps;
@@ -101,9 +104,6 @@ function generateMarkdown (answers) {
   - - To start ${answers.start}
   
   - - To test ${answers.test}
-
-  ## License Used
-  https://opensource.org/licenses/MIT
 
   ![terminal.png](terminal.png)
 
