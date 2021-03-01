@@ -1,9 +1,9 @@
 
-  ![MIT](https://img.shields.io/github/license/adams1971/C-lineApp)
-  # C-lineApp
+  ![MIT](https://img.shields.io/github/license/adams1971/C-LineApplication)
+  # C-LineApplication
   
   ## Table of Contents
-  <ol>
+  <ul>
   <li>
   <a href="#description">Description of Project</a>
   </li>
@@ -12,11 +12,10 @@
   <li>
   <a href="#contact">Contact Me</a>
   </li>
-  * [Contact Me] (#contact-me)
-  </ol>
+  </ul>
   ## Description of Project
   
-  readme
+  Readme
 
   ## Installing Auth Server
 
@@ -26,7 +25,7 @@
 
   ## Using Auth Server
   
-  To use C-lineApp, follow these steps;
+  To use C-LineApplication, follow these steps;
 
   - to start npm start
   
