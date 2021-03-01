@@ -63,16 +63,17 @@ inquirer.prompt([
 //generate markdown README
 function generateMarkdown (answers) {
   let file= `
-  ![${answers.license[0]}](https://img.shields.io/github/license/${answers.GitHub}/${answers.title})
-  # ${answers.title}
-
+  
   ![ReadME.png](ReadME.png)
+  
+  ![${answers.license[0]}](https://img.shields.io/github/license/${answers.GitHub}/${answers.title})
+  https://opensource.org/licenses/MIT
+  # ${answers.title}
 
   ## Table of Contents
   - [Description of Project](#description-of-project)
   - [Installing Project](#installing-project)
   - [Using the Project](#using-the-project)
-  - [License Used](#license-used)
   - [Demo Video](#demo-video)
   - [Contact](#contact)
 
@@ -85,9 +86,6 @@ function generateMarkdown (answers) {
   - git clone @ ${answers.GitHub} and paste into your terminal
 
   - To install dependencies run ${answers.install}
-
-  ## License Used
-  https://opensource.org/licenses/MIT
   
   ## Using the Project
   
